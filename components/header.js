@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DarkmodeToggle from "./darkmodeToggle";
 
 export default function Header() {
   return (
@@ -10,7 +11,7 @@ export default function Header() {
             <span className="ml-3 text-xl">hyem's dev portfolio</span>
           </a>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <Link href="/index" className="mr-5 hover:text-gray-900">
+            <Link href="/" className="mr-5 hover:text-gray-900">
               home
             </Link>
             <Link href="/aboutMe" className="mr-5 hover:text-gray-900">
@@ -23,6 +24,8 @@ export default function Header() {
               contact
             </Link>
           </nav>
+          {/* 다크모드 토글버튼 */}
+          <DarkmodeToggle />
         </div>
       </header>
     </>

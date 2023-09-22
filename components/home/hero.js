@@ -3,19 +3,16 @@ export default function Hero() {
     <>
       <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-          Knausgaard typewriter readymade marfa
+          hi hi hi
         </h1>
-        <p className="mb-8 leading-relaxed">
-          Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid swag
-          typewriter affogato, hella selvage wolf narwhal dreamcatcher.
-        </p>
+        <p className="mb-8 leading-relaxed">i'm hyem dev</p>
         <div className="flex w-full md:justify-start justify-center items-end">
           <div className="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
-            <label for="hero-field" className="leading-7 text-sm text-gray-600">
-              Placeholder
+            <label htmlFor="hero-field" className="leading-7 text-sm text-gray-600">
+              dasjdS;DFJHA LFSDGHAD;FG JHSDF'GKHJSD;FLG
             </label>
           </div>
-          <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+          <button className="inline-flex text-white bg-indigo-500 dark:bg-indigo-800 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 dark:hover:bg-indigo-900 rounded text-lg">
             프로젝트 보러가기
           </button>
         </div>

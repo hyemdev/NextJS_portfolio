@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <Layout>
-      <div classNameName="container">
+      <div className="container">
         <Head>
           <title> Hyem's dev PORTFOLIO </title>
           <meta name="description" content="hyem dev"></meta>
