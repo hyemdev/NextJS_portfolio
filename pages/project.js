@@ -9,16 +9,26 @@ export default function Projects() {
   );
 }
 
+// getStaticProps 빌드타임에 한번 호출
+// get
 export async function getStaticProps() {
   const options = {
     method: "POST",
     headers: {
-      accept: "application/json",
+      Accept: "application/json",
       "Notion-Version": "2022-06-28",
-      "content-type": "application/json",
-      Authorization: `${TOKEN}`,
+      "Content-type": "application/json",
+      Authorization: `Bearer ${TOKEN}`,
     },
-    body: JSON.stringify({ page_size: 100 }),
+    body: JSON.stringify({
+      sorts: [
+        {
+          property: "date",
+          direction: "ascending",
+        },
+      ],
+      // page_size: 100,
+    }),
   };
 
   const res = await fetch(
@@ -26,8 +36,8 @@ export async function getStaticProps() {
     options
   );
   const result = await res.json;
-
   console.log(result);
+
   return {
     props: {},
   };
