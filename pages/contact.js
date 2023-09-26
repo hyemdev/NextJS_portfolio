@@ -3,7 +3,11 @@ import Layout from "@/components/layout";
 export default function Contact() {
   return (
     <Layout>
-      <h3> contact </h3>
+      <div className="wrap-color">
+        <h3> contact </h3>
+        <div>email</div>
+        <div>number</div>
+      </div>
     </Layout>
   );
 }
